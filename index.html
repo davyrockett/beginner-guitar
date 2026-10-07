@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Frets has moved</title>
+<meta http-equiv="refresh" content="3; url=https://davyrockett.github.io/first-frets/">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#151310;color:#F0EBE3;font:17px/1.5 system-ui,-apple-system,sans-serif;padding:24px;box-sizing:border-box;text-align:center}
+h1{font-size:28px;margin:0 0 8px} p{margin:0 0 18px;color:#A79E92;max-width:34ch}
+a{display:inline-block;background:#EE9A45;color:#1E1B18;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:10px}
+</style>
+</head>
+<body>
+<main>
+<h1>Beginner Guitar is now First Frets</h1>
+<p>Same app, new address. If you added it to your Home Screen, add it again from the new page.</p>
+<a id="go" href="https://davyrockett.github.io/first-frets/">Open First Frets</a>
+</main>
+<script>
+// Old address of the app. Sends visitors (and their #section link) to the new address.
+const to='https://davyrockett.github.io/first-frets/'+location.hash;
+document.getElementById('go').href=to;
+setTimeout(()=>location.replace(to),1500);
+</script>
+</body>
+</html>
